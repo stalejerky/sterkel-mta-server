@@ -1,0 +1,22 @@
+{
+  "name": "sterkel-mta-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samtny/sterkel-mta-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samtny/sterkel-mta-server/issues"
+  },
+  "homepage": "https://github.com/samtny/sterkel-mta-server#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

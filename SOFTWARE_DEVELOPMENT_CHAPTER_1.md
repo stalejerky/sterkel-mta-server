@@ -16,7 +16,7 @@ We are ready to begin.
 
 We could start by writing our own web server framework, but this is not efficient as we are not really interested in this part of the problem.  Rather, we choose a pre-existing web framework to do virtually all of the heavy-lifting for us, so we may focus on the core problem.
 
-We decide on the 'nodejs' web framework for a few reasons<sup id="#a1">[1](#myfootnote1)</sup>:
+We decide on the 'nodejs' web framework for a few reasons<sup id="a1">[1](#myfootnote1)</sup>:
 
 1. It is a web framework that is very popular in the zeitgeist right now.
 1. It is fairly simple to set up on our local MacOS environments.
