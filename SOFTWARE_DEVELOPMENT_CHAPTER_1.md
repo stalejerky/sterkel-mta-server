@@ -14,14 +14,14 @@ We are ready to begin.
 
 ### INTRO: DECIDE ON A FRAMEWORK
 
-We could start by writing our own web server framework, but this is not efficient as we are not really interested in this part of the problem.  Rather, we choose a 'framework' to do virtually all of the heavy-lifting for us, so we may focus on the core problem.
+We could start by writing our own web server framework, but this is not efficient as we are not really interested in this part of the problem.  Rather, we choose a pre-existing web framework to do virtually all of the heavy-lifting for us, so we may focus on the core problem.
 
-We decide on the 'nodejs' web framework for a few reasons:
+We decide on the 'nodejs' web framework for a few reasons<sup id="#a1">[1](#myfootnote1)</sup>:
 
 1. It is a web framework that is very popular in the zeitgeist right now.
 1. It is fairly simple to set up on our local MacOS environments.
-1. I know from experience that nodejs apps can easily 'get data from an API' such as the API provided by the MTA, and it can also print the interesting (to me) parts of the data in a straightforward and useful way.
-1. I know also that nodejs apps are 'deployable' later to a public web server where we can access it using our phone / browser.
+1. I know from experience that nodejs apps can easily 'get data from an API' such as the API provided by the MTA, and it can also print the interesting (to our project) parts of the data in a straightforward and useful way.
+1. I know also that nodejs apps are 'deployable' later to a public web server which we may access using our phone / browser.
 
 ### STEP 1: PICK A "STACK" OR SEED PROJECT
 
@@ -33,15 +33,15 @@ I picked the first google result and read through it to be sure it matched what 
 
 Went back to google results and picked the second result: https://github.com/PauloLuan/node-express-seed.  This has **A LOT of words I don't immediately understand**, but it happens to mention another project - "this is based on the 'angular-fullstack' generator...'.  I think I maybe want that angular thing, so clicking on that now.
 
-Looking at 'angular-fullstack' link: https://github.com/angular-fullstack/generator-angular-fullstack, it also seems to have **too much going on for what I want**.  I don't want a "mongodb" back-end - that is a database and I am not interested in that right now.  There are too many files listed on this page, I have a feeling we can start with something simpler.
+Looking at 'angular-fullstack' link: https://github.com/angular-fullstack/generator-angular-fullstack, it also seems to have **too much going on for what I want**.  I don't want a "mongodb" back-end - that is a database and I am not interested in that right now.  There are too many files listed on this page, I have a feeling we can **start with something simpler**.
 
 Going back to google, searching more simply for "nodejs" so I can land on the homepage for nodejs, https://nodejs.org/en/.  There should be more bare-bones instructions there.
 
-Clicking on the "docs" link at the top of nodejs.org, so I can see if there is a "hello world" documentation for nodejs.  I am hoping it tells me in 3-5 lines of code how to: 1) get nodejs onto my mac, 2) write a line of code to print "hello world" and 3) get this text to print in a browser.  I know this is what nodejs is meant for, so I reasonably expect it should do this in **3-5 lines of code**.
+Clicking on the "docs" link at the top of nodejs.org, so I can see if there is a "hello world" documentation for nodejs.  I am hoping it tells me in **3-5 lines of code** how to: 1) get nodejs onto my mac, 2) write a line of code to print "hello world" and 3) get this text to print in a browser.  I know this is what nodejs is meant for, so I reasonably expect it should do this in 3-5 lines of code.
 
 There is a "guides" link, so clicking on that.  Clicking "getting started guide" after that.  The "getting started guide" shows me the **3-5 lines of code** I had in mind, so I know I have found my stack.
 
-### STEP 2: INSTALL THE TOOLS REQUIRED FOR THE STACK:
+### STEP 2: INSTALL THE DEVELOPMENT TOOLS REQUIRED BY THE STACK:
 
 This "guides" page seems to think I have nodejs already installed on my Mac - I know that I do not, so going back to look for an 'installation' link on nodejs.org.
 
@@ -51,7 +51,7 @@ Going back to the nodejs.org homepage and clicking on 'download'.  I choose the 
 
 ### STEP 3: GET THE STACK RUNNING "HELLO WORLD" LOCALLY
 
-Now that I have nodejs package installed, going back to the 'guides / getting started': https://nodejs.org/en/docs/guides/getting-started-guide/.  I see there 3-5 lines of code for a "Hello World". Great, we found it.  It says to "create a file" and paste code into it.
+Now that I have the nodejs package installed, going back to the 'guides / getting started': https://nodejs.org/en/docs/guides/getting-started-guide/.  I see there 3-5 lines of code for a "Hello World". Great, we found it.  It says to "create a file" and paste code into it.
 
 Before I create this file, I think briefly about organizing my work.  From past experience, I am thinking carefully at this step about 'namespacing': I am just doing a scratch 'hello world' right now, but I know I might extend this later into a bona-fide app, and the name of my folder will probably correspond to the name of my project.  Since we are working on Sterkel's 'MTA' idea, but just the data 'server' (or web service) portion, I choose the simplest folder name for my project, while being as descriptive as possible: 'sterkel-mta-server'.
 
@@ -106,7 +106,7 @@ So long as my app.js works on my local environment, I can be reasonably certain 
 
 In the next chapter, we will explore ways to extend app.js to fetch the necessary data from an api endpoint provided by the MTA.  Then 'wrangle' the MTA data a bit, before printing only the most relevant data for our purposes, so it is visible in our local browser.
 
-The result of our work on this project will always be a white screen in a browser, with either plain text, or perhaps 'JSON' formatted output.  We will treat the beautification or formatting of this output as a later step, using slightly different tools which we will google to find later.  This is the concept of 'decoupling' our data layer from our presentation layer - this concept is virtually universal in any serious project work.
+The result of our work on this project will always be a white screen in a browser, with either plain text, or perhaps 'JSON' formatted output.  We will treat the beautification or formatting of this output as a later step, using slightly different tools which we will google to find later.  This is the concept of 'decoupling' our data layer from our presentation layer - this concept is virtually universal in any serious project work<sup id="a2">[2](#myfootnote2)</sup>.
 
 ## END CHAPTER 1
 
@@ -123,3 +123,8 @@ I followed these steps to 'push' the current 'app.js' code, and the document you
 1. all of these files are now publicly visible on github.com at: https://github.com/samtny/sterkel-mta-server.
 
 ## END ADDENDUM A
+
+## FOOTNOTES
+
+<a name="myfootnote1">1</a>: Is nodejs the right tool for this job?  Node code execution is by nature 'asynchronous' so the source code can be tricky to debug. [↩](#a1)  
+<a name="myfootnote2">2</a>: Can't we have the "data" and "presentation" of this data both served by Nodejs, and thereby commit both pieces to this same project?  We could still keep separation of concerns by simply separating the class files that serve our app into 'data' and 'presentation' groups.  Perfectly valid also. [↩](#a2)  
