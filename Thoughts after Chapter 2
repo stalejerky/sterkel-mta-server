@@ -1,0 +1,17 @@
+//     So, since I don't know how to write in Markdown, I can certainly comment with the best of them.
+
+//     Thank you for this. I am now a server, and I have a project in Node.js Express.
+
+//     My adventure continues now that I've updated to express - all of this, mind you, was stuff I didn't know how to do (well, most - I did know how to open the terminal window :) )
+
+//      I have found a couple of additional items that I don't know how to incorporate into what you've shown me.  Can I get your thoughts on these?
+
+//      https://developers.google.com/transit/gtfs-realtime/examples/nodejs-sample
+
+//      That directs me, after some basic setup langauge, to this page: https://github.com/google/gtfs-realtime-bindings/tree/master/nodejs
+//         What strikes me about this page is the link to the "ProtBuf.js" library - which I think is likely an important library for reading the .proto files that are part of parsing this feed:
+
+//http://datamine.mta.info/mta_esi.php?key=d64f8d55281288232bab62f30c46fdc7
+
+//Also, I've found this and, like many other things, I think it's important despite having no sense of how to use it:
+// https://github.com/google/transit/blob/master/gtfs-realtime/proto/gtfs-realtime.proto
